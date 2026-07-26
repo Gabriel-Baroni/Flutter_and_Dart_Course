@@ -1,10 +1,12 @@
 import 'package:flutter/material.dart';
 import 'package:logger/logger.dart'; // Import the logger package
 
+//Função principal que vai chamar o meu app
 void main() {
   runApp(const MyApp());
 }
 
+//Função que cria a tela de pop up do login bem sucedido 
 void _showAlertDialog(BuildContext context, String title, String message) {
     showDialog(
       context: context,
@@ -25,7 +27,7 @@ void _showAlertDialog(BuildContext context, String title, String message) {
     );
 }
 
-
+// classe Myapp do tipo stateless
 class MyApp extends StatelessWidget {
   const MyApp({super.key});
 
